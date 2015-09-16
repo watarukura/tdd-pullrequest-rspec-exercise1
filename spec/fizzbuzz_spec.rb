@@ -12,5 +12,9 @@ describe 'FizzBuzz#say' do
       subject = FizzBuzz.new
       expect( subject.say(2) ).to eq '2'
     end
+    it "数字を返す_例4" do
+      subject = FizzBuzz.new
+      expect( subject.say(4) ).to eq '4'
+    end
   end
 end
