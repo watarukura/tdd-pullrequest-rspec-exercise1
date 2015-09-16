@@ -7,8 +7,8 @@ require 'fizzbuzz'
 # TODO 7. 1から100の数列をfizzbuzz配列に変換すること
 
 describe 'FizzBuzz#say' do
+  subject { FizzBuzz.new }
   context '3の倍数でも5の倍数でもない場合' do
-    subject { FizzBuzz.new }
     it "数字を返す_例2" do
       expect( subject.say(2) ).to eq '2'
     end
@@ -17,7 +17,6 @@ describe 'FizzBuzz#say' do
     end
   end
   context '3の倍数の場合' do
-    subject { FizzBuzz.new }
     it "Fizzを返す_例3" do
       expect( subject.say(3) ).to eq 'Fizz'
     end
