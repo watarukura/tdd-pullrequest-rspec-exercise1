@@ -24,4 +24,12 @@ describe 'FizzBuzz#say' do
       expect( subject.say(6) ).to eq 'Fizz'
     end
   end
+  context '3と5の倍数の場合' do
+    it "FizzBuzzを返す_例3" do
+      expect( subject.say(15) ).to eq 'FizzBuzz'
+    end
+    it "FizzBussを返す_例6" do
+      expect( subject.say(30) ).to eq 'FizzBuzz'
+    end
+  end
 end
